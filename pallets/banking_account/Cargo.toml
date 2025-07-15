@@ -1,0 +1,12 @@
+[package]
+name = "banking-account"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+frame-system = { version = "39.1.0", default-features = false }
+pallet-balances = { version = "40.0.1", default-features = false}
+frame-support = { version = "39.0.0", default-features = false}
+
+[features]
+std = ["frame-system/std", "pallet-balances/std"]
