@@ -4,9 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-frame-system = { version = "39.1.0", default-features = false }
-pallet-balances = { version = "40.0.1", default-features = false}
-frame-support = { version = "39.0.0", default-features = false}
+frame-system = { version = "41.0.0", default-features = false }
+pallet-balances = { version = "42.0.0", default-features = false}
+frame-support = { version = "41.0.0", default-features = false}
+parity-scale-codec = {version = "*", default-features = false}
+scale-info = { version = "*" }
 
 [features]
-std = ["frame-system/std", "pallet-balances/std"]
+std = ["frame-system/std", "pallet-balances/std", "frame-support/std", "parity-scale-codec/std"]
